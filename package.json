@@ -1,6 +1,6 @@
 {
   "name": "jamesstephens",
-  "homepage": "http://james-nitron.github.io/james-io",
+  "homepage": "http://james-nitron.github.io/nitron",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint --fix .",
     "lint-check": "eslint .",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
