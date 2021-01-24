@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/nitron-james/static/css/main.18006113.chunk.css",
-    "main.js": "/nitron-james/static/js/main.3d071c6b.chunk.js",
-    "main.js.map": "/nitron-james/static/js/main.3d071c6b.chunk.js.map",
-    "runtime-main.js": "/nitron-james/static/js/runtime-main.a443e5f2.js",
-    "runtime-main.js.map": "/nitron-james/static/js/runtime-main.a443e5f2.js.map",
-    "static/css/2.b72b1a0e.chunk.css": "/nitron-james/static/css/2.b72b1a0e.chunk.css",
-    "static/js/2.279654a8.chunk.js": "/nitron-james/static/js/2.279654a8.chunk.js",
-    "static/js/2.279654a8.chunk.js.map": "/nitron-james/static/js/2.279654a8.chunk.js.map",
-    "index.html": "/nitron-james/index.html",
-    "static/css/2.b72b1a0e.chunk.css.map": "/nitron-james/static/css/2.b72b1a0e.chunk.css.map",
-    "static/css/main.18006113.chunk.css.map": "/nitron-james/static/css/main.18006113.chunk.css.map",
-    "static/js/2.279654a8.chunk.js.LICENSE.txt": "/nitron-james/static/js/2.279654a8.chunk.js.LICENSE.txt",
-    "static/media/CV.ac095350.pdf": "/nitron-james/static/media/CV.ac095350.pdf",
-    "static/media/JAMES.65170da5.jpeg": "/nitron-james/static/media/JAMES.65170da5.jpeg",
-    "static/media/NITRON__HALF.a44f0257.png": "/nitron-james/static/media/NITRON__HALF.a44f0257.png"
+    "main.css": "/static/css/main.18006113.chunk.css",
+    "main.js": "/static/js/main.3d071c6b.chunk.js",
+    "main.js.map": "/static/js/main.3d071c6b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6a77eb4e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6a77eb4e.js.map",
+    "static/css/2.b72b1a0e.chunk.css": "/static/css/2.b72b1a0e.chunk.css",
+    "static/js/2.30006da0.chunk.js": "/static/js/2.30006da0.chunk.js",
+    "static/js/2.30006da0.chunk.js.map": "/static/js/2.30006da0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.b72b1a0e.chunk.css.map": "/static/css/2.b72b1a0e.chunk.css.map",
+    "static/css/main.18006113.chunk.css.map": "/static/css/main.18006113.chunk.css.map",
+    "static/js/2.30006da0.chunk.js.LICENSE.txt": "/static/js/2.30006da0.chunk.js.LICENSE.txt",
+    "static/media/CV.ac095350.pdf": "/static/media/CV.ac095350.pdf",
+    "static/media/JAMES.65170da5.jpeg": "/static/media/JAMES.65170da5.jpeg",
+    "static/media/NITRON__HALF.a44f0257.png": "/static/media/NITRON__HALF.a44f0257.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a443e5f2.js",
+    "static/js/runtime-main.6a77eb4e.js",
     "static/css/2.b72b1a0e.chunk.css",
-    "static/js/2.279654a8.chunk.js",
+    "static/js/2.30006da0.chunk.js",
     "static/css/main.18006113.chunk.css",
     "static/js/main.3d071c6b.chunk.js"
   ]
