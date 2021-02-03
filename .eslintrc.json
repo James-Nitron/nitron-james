@@ -16,7 +16,7 @@
     "rules": {
         "prettier/prettier": "error",
         "no-console": 1,
-        "no-unused-vars": 2,
+        "no-unused-vars": 0,
         "react/jsx-filename-extension": [
             1,
             {  
