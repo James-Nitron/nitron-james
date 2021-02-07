@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { Avatar, Typography, Row, Col, Alert, Divider, Layout } from 'antd';
+import { Switch, Route, Link, useLocation } from 'react-router-dom';
+import { Avatar, Typography, Row, Col, Alert, Divider, Layout, Menu } from 'antd';
 
 import Nitron from './assets/NITRON__HALF.png';
 import download from './assets/CV.pdf';
@@ -13,17 +14,10 @@ import Landing from './views/Landing';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Text, Paragraph } = Typography;
+const { Item } = Menu;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 99vh;
+const SWrapper = styled.div`
   background-color: white;
-`;
-
-const Link = styled.a`
-  color: #3366ff !important;
 `;
 
 const Image = styled.img`
@@ -31,20 +25,40 @@ const Image = styled.img`
   height: auto;
 `;
 
-const App = () => (
-  <Wrapper>
-    <Header style={{ backgroundColor: 'unset' }}>
-      <Row>
-        <Col
-          span={24}
-          style={{
-            display: 'flex',
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-            height: 64,
-          }}
-        >
-          <Link
+const SHeader = styled(Header)`
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
+const SMenu = styled(Menu)`
+  background-color: unset;
+  border: unset;
+`;
+
+const SText = styled(Text)`
+  color: white;
+`;
+
+const App = () => {
+  const location = useLocation();
+  return (
+    <SWrapper>
+      <SHeader>
+        <SMenu mode="horizontal" selectedKeys={[location.pathname]}>
+          <Item key="/">
+            <Link to="/">
+              <SText>Home</SText>
+            </Link>
+          </Item>
+          <Item key="/people">
+            <Link to="/people">
+              <SText>People</SText>
+            </Link>
+          </Item>
+        </SMenu>
+        {/* <Link
             href={download}
             target="_blank"
             download="James Stephens CV"
@@ -52,20 +66,25 @@ const App = () => (
             style={{ fontSize: 16 }}
           >
             CV
-          </Link>
-        </Col>
-      </Row>
-    </Header>
-    <Landing />
-    <People />
-    <Footer style={{ backgroundColor: 'unset' }}>
-      <Row>
-        <Col span={8} offset={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Image alt="Nitron Logo" src={Nitron} />
-        </Col>
-      </Row>
-    </Footer>
-  </Wrapper>
-);
+          </Link> */}
+      </SHeader>
+      <Switch>
+        <Route path="/people">
+          <People />
+        </Route>
+        <Route path="/">
+          <Landing />
+        </Route>
+      </Switch>
+      <Footer style={{ backgroundColor: 'unset' }}>
+        <Row>
+          <Col span={8} offset={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Image alt="Nitron Logo" src={Nitron} />
+          </Col>
+        </Row>
+      </Footer>
+    </SWrapper>
+  );
+};
 
 export default App;
