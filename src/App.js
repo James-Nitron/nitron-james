@@ -1,28 +1,23 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { Switch, Route, Link, useLocation } from 'react-router-dom';
-import { Avatar, Typography, Row, Col, Alert, Divider, Layout, Menu } from 'antd';
+import { Typography, Layout, Menu } from 'antd';
 
-import Nitron from './assets/NITRON__HALF.png';
 import download from './assets/CV.pdf';
 
 import People from './views/People';
+import Footer from './components/Footer';
 
 import './app.css';
 import 'antd/dist/antd.css';
 import Landing from './views/Landing';
 
-const { Header, Content, Footer } = Layout;
-const { Title, Text, Paragraph } = Typography;
+const { Header } = Layout;
+const { Text } = Typography;
 const { Item } = Menu;
 
 const SWrapper = styled.div`
   background-color: white;
-`;
-
-const Image = styled.img`
-  width: 100px;
-  height: auto;
 `;
 
 const SHeader = styled(Header)`
@@ -76,13 +71,7 @@ const App = () => {
           <Landing />
         </Route>
       </Switch>
-      <Footer style={{ backgroundColor: 'unset' }}>
-        <Row>
-          <Col span={8} offset={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Image alt="Nitron Logo" src={Nitron} />
-          </Col>
-        </Row>
-      </Footer>
+      <Footer />
     </SWrapper>
   );
 };

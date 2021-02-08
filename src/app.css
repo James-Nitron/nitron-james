@@ -1,4 +1,5 @@
-body {
+html, body {
     background-color: #3366ff !important;
+    scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
 }
